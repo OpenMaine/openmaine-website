@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Open Maine - A Code for America Brigade</title>
+  <title>OpenMaine - A Code for America Brigade</title>
+  <link rel="icon" href="img/icon.5.png">
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,10 +17,21 @@
   <!-- Custom fonts for this template -->
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
   
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"> 
+
   <!-- Custom styles for this template -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-freelancer/5.0.4/css/freelancer.css" rel="stylesheet">
   <link href="css/freelancerchanges.css" rel="stylesheet">
 
+  <!--JQuery -->
+  <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+  <!-- Moment.js CDN for parsing dates -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+        
 </head>
 
 <body id="page-top">
@@ -43,9 +55,9 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#around">Around the Web</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://openmaine.slack.com" target="_blank">Slack</a>
-          </li>
+         <!-- <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://openmaine.slack.com" target="_blank">Slack</a> 
+          </li> -->
         </ul>
       </div>
     </div>
@@ -53,28 +65,63 @@
 
   <!-- Header -->
   <header class="masthead bg-first text-white text-center">
-    <div class="container">
-      <h2 class="mb-0">Open Maine is a Code for America Brigade. </h2> 
-      <h2>We volunteer to help design, develop, and improve civic systems in Maine.</h2>
-      <br>
-          <p class="lead">We meet up every third Thursday of the month</p>
-          <a class="btn btn-xl btn-outline-light" href="https://www.meetup.com/OpenMaine/" target="_blank">
-          RSVP on Meetup
-        </a>
-        <br>
-        <br>
-        <p class="lead">To keep in touch with us throughout the month connect with us on <a href="https://openmaine.slack.com" target="_blank">Slack </a></p>
+  <div class="container">
+    <h2 class="mb-0">Open Maine is a Code for America Brigade. </h2>
+    <h2>We volunteer to help design, develop, and improve civic systems in Maine.</h2>
+    <br/>
+    <p class="lead">We meet in Portland every third Thursday of the month, in Augusta every second Wednesday of the month,<br/>and ocassionally for special events</p>
+    <br/>
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="box-img" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/69/Portland_Head_Lighthouse%2C_Maine.jpg)"></div>
+          <div class="box-details">
+            The next meetup in Portland is:
+            <div id="day"></div>
+            <div id="time"></div>
+            <div id="venue"></div>
+            <div id="location"></div>
+            <a href="https://www.meetup.com/OpenMaine/" target="_blank">RSVP & view all events on Meetup</a>
+          </div>
         </div>
-  </header>
+      </div>
+      <!-- Meetup API JS -->
+      <script src="openmaine.js"></script>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="box-img" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c6/Maine_State_House_from_Capitol_Park.jpg)"></div>
+            <div class="box-details">
+              The next meetup in Augusta is:
+              <div id="Aday"></div>
+              <div id="Atime"></div>
+              <div id="Avenue"></div>
+              <div id="Alocation"></div>
+              <a href="https://www.meetup.com/OpenMaine/" target="_blank">RSVP & view all events on Meetup</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Meetup API JS -->
+      <script src="openmaine.js"></script>
+      <br/>
+      <br/>
+      <div class="container">
+        <p class="lead">We use <a href="https://openmaine.slack.com/" target="_blank">Slack</a> to communicate and organize in between Meetups. <br/> You can request an invitation to join OpenMaine's slack channel<a href="https://openmaine.slack.com/join/shared_invite/enQtNDA3ODQ4MTE5MjMyLWVkODljOTU0MWI3MzI4YjI3MmU2MjkzMGE0MTI3NDEzZTYwZjQzMzg5ZWViYjdkODEzOTdjZjE0NWJkNGE4ZDA"
+            target="_blank"> here.</a></p>
+      </div>
+    </div>
+</header>
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
-      <h3 class = "text-center">Below are a few of our projects, check out others on <a href="https://github.com/OpenMaine" target="_blank"> Github </a></h3>
+      <h3 class = "text-center">Below are our priority projects, check out others on <a href="https://github.com/OpenMaine" target="_blank"> Github </a></h3>
       <br>
 
       <div class="row">
+        <div class="col-lg-2"></div>
         <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -85,17 +132,20 @@
             <img class="img-fluid" src="img/MaineBallotLogo.jpg" alt="Maine Ballot Logo">
           </a>
         </div>
+
         <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+              </div> 
             </div>
-            <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/150512-D-AF077-139_%2817555767316%29.jpg" alt="Workers">
+            <h3 class="text-center text-primary">Campaign Finance</h3>
+            <p class="text-center text-muted">2019 Portland Mayoral Election</p>
           </a>
         </div>
-        <div class="col-md-6 col-lg-4">
+
+        <!--<div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -104,7 +154,7 @@
             </div>
             <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/9/97/1876_Birds_eye_view_of_the_city_of_Portland_Maine_BPL.png" alt="Birds eye view of Portland, ME">
           </a>
-        </div>
+        </div> -->
   </section>
 
   <!-- About Section -->
@@ -117,10 +167,13 @@
           <p class="lead">We are a brigade in the Code for America network: “Code for America uses the principles and practices of the digital age to improve how government serves the American public, and how the public improves government.”</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">You can find our Code of Conduct here.  As a new organization we are still drafting important documents, including a mission statement, values, and project guidelines.  You can find these documents on our Github account and we welcome feedback on them. </p>
+          <p class="lead">You can find our Code of Conduct <a href="CodeofConduct/index.html">here.</a>  As a new organization we are still drafting important documents, including a mission statement, values, and project guidelines.  You can find these documents on our Github account and we welcome feedback on them. </p>
         </div>
-      </div>
-      <div class="text-center mt-4">
+        <div class="container text-center mt-4 d-none d-sm-block"><p class="lead">To learn more about Code for America Brigades check out this video<br/></p><iframe width="500" height="275" src="https://www.youtube.com/embed/mYzMl_HnEZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="container text-center mt-4 embed-responsive embed-responsive-16by9 d-block d-sm-none"><p class="lead">To learn more about Code for America Brigades check out this video<br/></p><iframe width="500" height="275" src="https://www.youtube.com/embed/mYzMl_HnEZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      <div class=" container text-center mt-4">
         <p class="lead"> We welcome finanical contributions through Code for America.</p>
         <a class="btn btn-xl btn-outline-light" href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Open%20Maine" target="_blank">
           Donate Now!
@@ -136,6 +189,11 @@
         <div class="text-center">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
           <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="mailto:hello@openmaine.org" target="_blank">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
             <li class="list-inline-item">
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/openmaine" target="_blank">
                 <i class="fab fa-fw fa-facebook-f"></i>
@@ -209,10 +267,10 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Legislative Scorecard</h2>
+            <h2 class="text-secondary text-uppercase mb-0">Campaign Finance</h2>
             <br>
-            <img class="img-fluid mb-5" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/MaineStateHouse1.JPG" alt="Maine State House">
-            <p class="mb-5">Open Maine worked wit the AFL-CIO of Maine to create a legislative scorecard.  You can view the code <a href="https://github.com/OpenMaine/aflcio_scorecard" target="_blank"> here</a></p>
+            <img class="img-fluid mb-5" src="img/moneysmall.jpg" alt="Maine State House">
+            <p class="mb-5">Open Maine is publishing campaign finance information to the web!  We are starting with the 2019 Portland Mayoral Candidates. You can learn more about the project <a href="https://github.com/OpenMaine/Campaign-Finance" target="_blank"> here</a></p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -222,7 +280,7 @@
     </div>
   </div>
 
-  <!-- Portfolio Modal 3 -->
+  <!-- Portfolio Modal 3 
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -242,7 +300,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
