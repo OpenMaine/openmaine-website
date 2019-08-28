@@ -35,17 +35,19 @@
 </head>
 
 <body id="page-top">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-second fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Open Maine</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="50" width="50" src="img/icon.5.png" alt="OpenMaine logo"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-first text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#connect">Connecting</a>
+          </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
           </li>
@@ -55,6 +57,7 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#around">Around the Web</a>
           </li>
+          
          <!-- <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://openmaine.slack.com" target="_blank">Slack</a> 
           </li> -->
@@ -64,12 +67,21 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead bg-first text-white text-center">
+  <header class="bg-first text-white">
   <div class="container">
-    <h2 class="mb-0">Open Maine is a Code for America Brigade. </h2>
-    <h2>We volunteer to help design, develop, and improve civic systems in Maine.</h2>
-    <br/>
-    <p class="lead">We meet in Portland every third Thursday of the month, in Augusta every second Wednesday of the month,<br/>and ocassionally for special events</p>
+  <div class="row align-items-center">
+  <div class="col-sm-7">
+  <header class="bg">   
+  </div>
+    <div class="col-sm-5 mt-5 text-center text-wrap">
+    <h2 class="mb-0 mr-5">Open Maine is a Code for America Brigade.</h2><p class="lead mr-5">We volunteer to help design, develop, and improve civic systems in Maine. Whether you are a professional coder or a community member with an idea, everyone interested in making Maine better is welcome!</p> 
+  </div>
+</div>
+ </header>
+
+ <section id="connect" class="bg-second text-black text-center">
+ 
+   <h5> We meet in Portland every third Thursday of the month, in Augusta every second Wednesday of the month, <br/>and ocassionally for special events</h5>
     <br/>
     <div class="row">
       <div class="col-lg-2"></div>
@@ -107,20 +119,47 @@
       <br/>
       <br/>
       <div class="container">
-        <p class="lead">We use <a href="https://openmaine.slack.com/" target="_blank">Slack</a> to communicate and organize in between Meetups. <br/> You can request an invitation to join OpenMaine's slack channel<a href="https://openmaine.slack.com/join/shared_invite/enQtNDA3ODQ4MTE5MjMyLWVkODljOTU0MWI3MzI4YjI3MmU2MjkzMGE0MTI3NDEzZTYwZjQzMzg5ZWViYjdkODEzOTdjZjE0NWJkNGE4ZDA"
-            target="_blank"> here.</a></p>
+        <p class="lead">Unable to make it to an event? Want to get started on something before the next meeting? Have questions? <br/>Join the conversation on Slack or find projects on Github. </br>Request a <a href="https://openmaine.slack.com/join/shared_invite/enQtNDA3ODQ4MTE5MjMyLWVkODljOTU0MWI3MzI4YjI3MmU2MjkzMGE0MTI3NDEzZTYwZjQzMzg5ZWViYjdkODEzOTdjZjE0NWJkNGE4ZDA"
+            target="_blank">Slack</a> invitation | View projects on <a href="https://github.com/OpenMaine" target="_blank">Github</a></p>
+       <!-- <p class="lead">We use <a href="https://openmaine.slack.com/" target="_blank">Slack</a> to communicate and organize in between Meetups. <br/> You can request an invitation to join OpenMaine's slack channel<a href="https://openmaine.slack.com/join/shared_invite/enQtNDA3ODQ4MTE5MjMyLWVkODljOTU0MWI3MzI4YjI3MmU2MjkzMGE0MTI3NDEzZTYwZjQzMzg5ZWViYjdkODEzOTdjZjE0NWJkNGE4ZDA"
+            target="_blank"> here.</a></p>-->
       </div>
     </div>
+    </div>
+    </section>
 </header>
 
   <!-- Portfolio Grid Section -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio bg-first text-white" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
+      <h2 class="text-center text-uppercase mb-0">Projects</h2><br/>
       <h3 class = "text-center">Below are our priority projects, check out others on <a href="https://github.com/OpenMaine" target="_blank"> Github </a></h3>
       <br>
 
       <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="projectbox-img" style="background-image: url(img/MaineBallotLogo.jpg)"></div>
+          <div class="text-center">_____________</div>
+          <div class="box-details">
+            <a href="https://maineballot.org" target="_blank">MaineBallot.org</a> was created by Shannon McHarg. The goal the project is to provide concise, non-partisan information to make it easy to understand the ballot questions pending in Maine. View the source code on<a href="https://github.com/OpenMaine/maineballot" target="_blank"> Github. </a>
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="projectbox-img1" style="background-image: url(img/money.jpg)"></div>
+            <div class="text-center">_____________</div>
+            <div class="box-details">
+              Open Maine is publishing campaign finance information to the web.  We are starting with the 2019 Portland Mayoral Candidates. You can learn more about the project and ways to get involved on<a href="https://github.com/OpenMaine/Campaign-Finance" target="_blank"> Github.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="row">
         <div class="col-lg-2"></div>
         <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
@@ -143,7 +182,7 @@
             <h3 class="text-center text-primary">Campaign Finance</h3>
             <p class="text-center text-muted">2019 Portland Mayoral Election</p>
           </a>
-        </div>
+        </div> -->
 
         <!--<div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
@@ -158,9 +197,9 @@
   </section>
 
   <!-- About Section -->
-  <section class="bg-first text-white mb-0" id="about">
+  <section class="bg-second text-black mb-0" id="about">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
+      <h2 class="text-center text-uppercase">About</h2>
       <br>
       <div class="row">
         <div class="col-lg-4 ml-auto">
@@ -175,7 +214,7 @@
         </div>
       <div class=" container text-center mt-4">
         <p class="lead"> We welcome finanical contributions through Code for America.</p>
-        <a class="btn btn-xl btn-outline-light" href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Open%20Maine" target="_blank">
+        <a class="btn btn-xl btn-outline-dark text-dark" href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Open%20Maine" target="_blank">
           Donate Now!
         </a>
       </div>
@@ -188,30 +227,30 @@
     <div class="container">
         <div class="text-center">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <ul class="list-inline mb-0">
+          <ul class="list-inline mb-0" id="socialMediaIcons">
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="mailto:hello@openmaine.org" target="_blank">
+              <a href="mailto:hello@openmaine.org" target="_blank">
                 <i class="fa fa-envelope"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/openmaine" target="_blank">
+              <a href="https://www.facebook.com/openmaine" target="_blank">
                 <i class="fab fa-fw fa-facebook-f"></i>
               </a>
             </li>
             
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/Open_Maine" target="_blank">
+              <a href="https://twitter.com/Open_Maine" target="_blank">
                 <i class="fab fa-fw fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/openmaine" target="_blank">
+              <a href="https://github.com/openmaine" target="_blank">
                 <i class="fab fa-fw fa-github"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://openmaine.slack.com" target="_blank">
+              <a href="https://openmaine.slack.com" target="_blank">
                 <i class="fab fa-fw fa-slack"></i>
               </a>
             </li>
@@ -269,7 +308,7 @@
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Campaign Finance</h2>
             <br>
-            <img class="img-fluid mb-5" src="img/moneysmall.jpg" alt="Maine State House">
+            <img class="img-fluid mb-5" src="img/moneysmall.jpg" alt="Money">
             <p class="mb-5">Open Maine is publishing campaign finance information to the web!  We are starting with the 2019 Portland Mayoral Candidates. You can learn more about the project <a href="https://github.com/OpenMaine/Campaign-Finance" target="_blank"> here</a></p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
