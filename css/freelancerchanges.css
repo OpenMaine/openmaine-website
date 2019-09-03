@@ -1,28 +1,43 @@
 html, body, h1, h2, h3, h4, h5, h6{
 	font-family: Roboto, Palatino, Helvetica, sans-serif;
 }
+
 .p{
 	font-family: Roboto, Palatino, Helvetica, sans-serif;
 }
 
 .bg-first {
-  background-color: #040437 !important;
+  background-color: #040437  !important;
 
 }
 
 .bg-second {
-  background-color: #d0d5dd;
+  background-color: #EFEEDE;
 
 }
 
-.a{
-	color: #30B309;
+.bg-third {
+  background-color: #FFFFFF
+}
+a{
+	color: #353BA6;
 
 }
+
+#mainNav .navbar-brand{
+	color: black;
+	font-size:1rem;
+	font-family: Palatino, Helvetica, sans-serif;
+}
+
 #mainNav .navbar-nav li.nav-item a.nav-link{
-	color:black;
+	color: black;
 	font-family: Palatino, Helvetica, sans-serif;
 
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active{
+	background: #353BA6;
 }
 
 .header.masthead h2 {
@@ -119,7 +134,7 @@ html, body, h1, h2, h3, h4, h5, h6{
 	background-size: 100%;
 	display: block;
 	height: 0;
-	border-radius: 15px 15px 0 0;
+	border-radius: 5px 5px 0 0;
 	padding-top: 30%;
 	width: 100%;
 }
@@ -128,7 +143,11 @@ html, body, h1, h2, h3, h4, h5, h6{
 	font-size: 1.5rem;
 }
 .footer{
-	background-color: #040437;
+	background-color: #FFFFFF;
 }
 
+.copyright {
 
+    background-color: #040437;
+
+}
