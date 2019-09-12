@@ -1,7 +1,153 @@
+html, body, h1, h2, h3, h4, h5, h6{
+	font-family: Roboto, Palatino, Helvetica, sans-serif;
+}
+
+.p{
+	font-family: Roboto, Palatino, Helvetica, sans-serif;
+}
+
 .bg-first {
-  background-color: #3333cc !important;
+  background-color: #040437  !important;
+
 }
 
 .bg-second {
-  background-color: #6C757D;
+  background-color: #EFEEDE;
+
+}
+
+.bg-third {
+  background-color: #FFFFFF
+}
+a{
+	color: #353BA6;
+
+}
+
+#mainNav .navbar-brand{
+	color: black;
+	font-size:1rem;
+	font-family: Palatino, Helvetica, sans-serif;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link{
+	color: black;
+	font-family: Palatino, Helvetica, sans-serif;
+
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active{
+	background: #353BA6;
+}
+
+.header.masthead h2 {
+	font: Roboto;
+}
+.container{
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	margin-right: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.bg{
+	background: url("../img/OpenMaineSmall.jpg") left center no-repeat;
+	background-size: cover;
+    display: flex;
+    height: 100vh;
+    max-height: 200px;
+    min-height: 80vh;
+    padding: 0px;
+    position: relative;
+}
+
+.col-sm-7{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#mainNav{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 10px;
+	color: black;
+}
+.navbar-nav{
+	color: black;
+}
+
+.grid3{
+  height: 200px;
+  background: rgba(0,0,0,.4);
+  float: none;
+  display: inline-block;
+  background-clip: content-box
+}
+
+.box {
+	background: #fff;
+	border-radius: 20px;
+	width: 300px;
+	height: 335px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+	color: #161617;
+	font-size: 18px;
+}
+
+.box-img{
+	background: white center no-repeat;
+	background-size: cover;
+	display: block;
+	height: 0;
+	border-radius: 15px 15px 0 0;
+	padding-top: 50%;
+	width: 100%;
+}
+
+.box-details{
+	padding: 16px;
+}
+.projectbox-img{
+	background: white center no-repeat;
+	background-size: 90%;
+	display: block;
+	height: 0;
+	border-radius: 15px 15px 0 0;
+	padding-top: 30%;
+	width: 100%;
+}
+.projectbox-img1{
+	background: white center no-repeat;
+	background-size: 100%;
+	display: block;
+	height: 0;
+	border-radius: 5px 5px 0 0;
+	padding-top: 30%;
+	width: 100%;
+}
+
+.list-inline{
+	font-size: 1.5rem;
+}
+.footer{
+	background-color: #FFFFFF;
+}
+
+.copyright {
+
+    background-color: #040437;
+
 }
