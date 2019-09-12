@@ -8,49 +8,50 @@ function httpGet(theUrl)
       format: "json"
     },
     success: function(response) {
-      var events = response.data;
+      var events = response.results;
       console.log(events); 
-
-      for(i=0;i<=events.length;i++){
-        if(events[i].venue.city === 'Augusta') {
-          var d = events[i].local_date;
-          //var date = new Date(d);
-          var Adate = moment(d, "YYYY-MM-DD");
-          var t = events[i].local_time;
-          var Atime = moment(t, "hh:mm");
-          var Avenue = events[i].venue.name;
-          var Alocation = events[i].venue.address_1;
-          console.log(date);
-          //document.getElementById('day').innerHTML = date.toDateString("DD-MM-YYYY");
-          document.getElementById('Aday').innerHTML = Adate.format("ddd, MMM. DD YYYY");
-          document.getElementById('Atime').innerHTML = Atime.format("h:mm a");
-          document.getElementById('Avenue').innerHTML = Avenue;
-          document.getElementById('Alocation').innerHTML = Alocation;
+      var Portlandindex=-1;
+      var Augustindex=-1;
+      var i=0;
+      while (Portlandindex==-1 || Augustindex==-1 && i<events.length){
+        if(events[i].venue != undefined){
+          if(events[i].venue.city === 'Portland'){
+            Portlandindex=i;
+          }
+          else if(events[i].venue.city === 'Augusta'){
+            Augustindex=i;
+          }
         }
-
-        else if(events[i].venue.city === 'Portland') {
-          var d = events[i].local_date;
-          //var date = new Date(d);
-          var date = moment(d, "YYYY-MM-DD");
-          var t = events[i].local_time;
-          var time = moment(t, "hh:mm");
-          var venue = events[i].venue.name;
-          var location = events[i].venue.address_1;
-          console.log(date);
-          //document.getElementById('day').innerHTML = date.toDateString("DD-MM-YYYY");
-          document.getElementById('day').innerHTML = date.format("ddd, MMM. DD YYYY");
-          document.getElementById('time').innerHTML = time.format("h:mm a");
+        i++;
+      }
+     
+          var utcSeconds = events[Portlandindex].time;
+          var Ud = new Date(utcSeconds);
+          var d = Ud.toUTCString(utcSeconds);
+          var date = moment(d).format("lll");
+          var venue = events[Portlandindex].venue.name;
+          var location = events[Portlandindex].venue.address_1;
+          document.getElementById('day').innerHTML = date;
           document.getElementById('venue').innerHTML = venue;
           document.getElementById('location').innerHTML = location;
-        }
+
+        
+          var utcSeconds = events[Augustindex].time;
+          var Ud = new Date(utcSeconds);
+          var d = Ud.toUTCString(utcSeconds);
+          var Adate = moment(d).format("lll");
+          var Avenue = events[Augustindex].venue.name;
+          var Alocation = events[Augustindex].venue.address_1;
+          document.getElementById('Aday').innerHTML = Adate;
+          document.getElementById('Avenue').innerHTML = Avenue;
+          document.getElementById('Alocation').innerHTML = Alocation;
+        
         
       }
-    }
+    
   });
 }
 
-var data = httpGet("https://api.meetup.com/OpenMaine/events?&sign=true&photo-host=public&page=20&key=22296f2422622a571d505901f421542");
-//var obj = JSON.parse(this.response);
 
-//document.getElementById('info').innerHTML = obj.local_date;
-//$('#info').html(data);
+var data = httpGet("https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=OpenMaine&page=20&callback=?");
+
