@@ -8,7 +8,6 @@ function httpGet(theUrl) {
     },
     success: function(response) {
       var events = response.results;
-      console.log(events);
       var Portlandindex = -1;
       var Augustindex = -1;
       var i = 0;
