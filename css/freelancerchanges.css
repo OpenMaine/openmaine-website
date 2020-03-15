@@ -64,12 +64,12 @@ a{
 .bg{
 	background: url("../img/OpenMaineSmall.jpg") left center no-repeat;
 	background-size: cover;
-    display: flex;
-    height: 100vh;
-    max-height: 200px;
-    min-height: 80vh;
-    padding: 0px;
-    position: relative;
+  display: flex;
+  height: 80vh;
+  max-height: 200px;
+  min-height: 60vh;
+  padding: 0px;
+  position: relative;
 }
 
 .col-sm-7{
