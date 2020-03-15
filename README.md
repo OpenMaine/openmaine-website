@@ -20,7 +20,7 @@ https://help.github.com/en/articles/cloning-a-repository
 Nutshell process to contribute code, w/o branching, on the command line:
 1. Clone repo, as described in the link above
   you now have a local copy, in a new directory called
-	"Campaign-Finance" 
+	"openmaine-website" 
 2. cd into that directory
 3. edit
 4. (check your work!)
