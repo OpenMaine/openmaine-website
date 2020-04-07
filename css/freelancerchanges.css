@@ -6,6 +6,7 @@ Bootstrap css:
 https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css
 
 #040437 = dark blue (but I don't think we quite matched the shade of the logo)
+  ... logo is 111155... change? (changed just for menu/buttons)
 #F5F0E1 -- off-white
 #183A8F -- less purple 
              kicks in in some contexts for mouse over button
@@ -90,7 +91,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active{
-		background: #040437;
+		background: #111155;
 }
 
 .header.masthead h2 {
