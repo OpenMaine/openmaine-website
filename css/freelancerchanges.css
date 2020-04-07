@@ -1,9 +1,9 @@
 html, body, h1, h2, h3, h4, h5, h6{
-	font-family: Roboto, Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .p{
-	font-family: Roboto, Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .bg-first {
@@ -27,12 +27,12 @@ a{
 #mainNav .navbar-brand{
 	color: black;
 	font-size:1rem;
-	font-family: Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link{
 	color: black;
-	font-family: Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 
 }
 
