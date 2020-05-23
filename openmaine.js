@@ -6,6 +6,7 @@ function httpGet(theUrl) {
     data: {
       format: "json"
     },
+   
     success: function(response) {
       var events = response.results;
       var Portlandindex = -1;
@@ -15,7 +16,7 @@ function httpGet(theUrl) {
         if (events[i].venue != undefined) {
           if (events[i].venue.city === "Portland") {
             Portlandindex = i;
-          } else if (events[i].venue.city === "Augusta") {
+          } else if (events[i].name === "OpenMaine in Augusta Meetup: Civic Tech in Central Maine") {
             Augustindex = i;
           }
         }
@@ -29,8 +30,8 @@ function httpGet(theUrl) {
       var venue = events[Portlandindex].venue.name;
       var location = events[Portlandindex].venue.address_1;
       document.getElementById("day").innerHTML = date;
-      document.getElementById("venue").innerHTML = venue;
-      document.getElementById("location").innerHTML = location;
+      /*document.getElementById("venue").innerHTML = venue;
+      document.getElementById("location").innerHTML = location;*/
 
       var utcSeconds = events[Augustindex].time;
       var Ud = new Date(utcSeconds);
@@ -40,7 +41,7 @@ function httpGet(theUrl) {
       var Alocation = events[Augustindex].venue.address_1;
       document.getElementById("Aday").innerHTML = Adate;
       document.getElementById("Avenue").innerHTML = Avenue;
-      document.getElementById("Alocation").innerHTML = Alocation;
+      /*document.getElementById("Alocation").innerHTML = Alocation;*/
     }
   });
 }
@@ -48,3 +49,4 @@ function httpGet(theUrl) {
 var data = httpGet(
   "https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=OpenMaine&page=20&callback=?"
 );
+
