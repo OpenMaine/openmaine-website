@@ -1,9 +1,29 @@
+/* Colors:
+Defaults come from:
+https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-freelancer/5.0.4/css/freelancer.css
+... see index.html for the link
+Bootstrap css:
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css
+
+#040437 = dark blue (but I don't think we quite matched the shade of the logo)
+  ... logo is 111155... change? (changed just for menu/buttons)
+#F5F0E1 -- off-white
+#183A8F -- less purple 
+             kicks in in some contexts for mouse over button
+ 		         also, internet connectivity icons at the bottom
+#226666 == darker teal green
+#79b5b5 == lighter teal green
+
+#000000 -- black
+#FFFFFF -- white
+*/
+
 html, body, h1, h2, h3, h4, h5, h6{
-	font-family: Roboto, Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .p{
-	font-family: Roboto, Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .bg-first {
@@ -12,7 +32,7 @@ html, body, h1, h2, h3, h4, h5, h6{
 }
 
 .bg-second {
-  background-color: #EFEEDE;
+  background-color: #F5F0E1;
 
 }
 
@@ -20,24 +40,58 @@ html, body, h1, h2, h3, h4, h5, h6{
   background-color: #FFFFFF
 }
 a{
-	color: #353BA6;
-
+		color: #183A8F;
 }
+a:hover{
+		color: #226666 !important;
+}
+
+/* CBC: trying to fix button (btn) hovering for donate link... changing hover colors */
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #79b5b5;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #79b5b5;
+}
+a:focus, a:hover, a:active {
+  color: #79b5b5;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+		background-color: #79b5b5;
+		border-color: #128f76;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+		background-color: #79b5b5;
+    border-color: #1a252f;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #79b5b5;
+  border-color: #1d2124;
+}
+a.text-dark:hover, a.text-dark:focus {
+  color: #226666 !important;
+  background-color: #79b5b5;
+}
+
+
+
 
 #mainNav .navbar-brand{
 	color: black;
 	font-size:1rem;
-	font-family: Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link{
 	color: black;
-	font-family: Palatino, Helvetica, sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active{
-	background: #353BA6;
+		background: #111155;
 }
 
 .header.masthead h2 {
@@ -103,7 +157,7 @@ a{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 24px;
-	color: #161617;
+	color: #000000;
 	font-size: 18px;
 }
 
@@ -147,7 +201,5 @@ a{
 }
 
 .copyright {
-
     background-color: #040437;
-
 }
