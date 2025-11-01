@@ -8,8 +8,7 @@ issue a pull request.
 
 
 Just putting this here, so peeps can find it... **Slack invite link**:
-https://join.slack.com/t/openmaine/shared_invite/zt-57d28mv4-j~WPnaNxVq43GDX~3Te4Hg 
-(it expires from time to time; this one is current as of 3/14/20.
+https://join.slack.com/t/openmaine/shared_invite/zt-3g1oygfcy-hZHmsamp_oM8cWbtRU1Eew 
 
 
 # Whoa, how do I make a local ('my own') copy of these files?
